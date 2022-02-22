@@ -14,12 +14,12 @@ In this step of project, a simple HTML list of To Do tasks is builded. The list 
 ```
 git clone https://github.com/ZahraArshia/To-Do-List/.git 
 ```
-**step2** buile the project using nmp :
+**step2** buile the project:
 ```
 npm install
 npm run build
 ```
-**step3** Development using nmp:
+**step3** Development:
 ```
 npm install --save-dev webpack-dev-server
 npm start   
