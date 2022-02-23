@@ -9,8 +9,8 @@ document.getElementById('addButton').addEventListener('click', () => {
 });
 
 const editbtn = document.querySelectorAll('.editButton');
-editbtn.forEach((btn , index) => {
-btn.addEventListener('click', () => {
-  newTask.edit(index); 
-});
+editbtn.forEach((btn, index) => {
+  btn.addEventListener('click', () => {
+    newTask.edit(index);
+  });
 });

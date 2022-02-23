@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 import Icon from './icons8-drop-down-24.png';
 import removeIcon from './icons8-remove-24.png';
 import editIcon from './icons8-edit-24.png';
@@ -5,21 +6,22 @@ import './style.css';
 
 export default class Task {
   constructor(index, description, completed) {
-        this.index = index;
-        this.description = description;
-        this.completed = completed;
-      }
+    this.index = index;
+    this.description = description;
+    this.completed = completed;
+  }
 
   taskList = [];
+
   editMood = false;
 
   add() {
-  const temp = new Task (this.taskList.length ,document.getElementById('inputDescription').value, false);
-  this.taskList.push(temp);
-  localStorage.setItem('taskList', JSON.stringify(this.taskList));
-  this.taskList = JSON.parse(localStorage.getItem('taskList'));
-  this.update();
-  location.reload();
+    const temp = new Task(this.taskList.length, document.getElementById('inputDescription').value, false);
+    this.taskList.push(temp);
+    localStorage.setItem('taskList', JSON.stringify(this.taskList));
+    this.taskList = JSON.parse(localStorage.getItem('taskList'));
+    this.update();
+    location.reload();
   }
 
   update() {
@@ -54,26 +56,26 @@ export default class Task {
           event.preventDefault();
           this.remove(index);
         });
-    });
+      });
+    }
   }
-}
 
   remove(index) {
     this.taskList.splice(index, 1);
-    this.taskList.forEach((task , id) => {
+    this.taskList.forEach((task, id) => {
       task.index = id;
     });
     localStorage.setItem('taskList', JSON.stringify(this.taskList));
     this.update();
     location.reload();
   }
- 
+
   edit(index) {
     document.getElementById('inputDescription').style.animationName = 'mymove';
     document.getElementById('inputDescription').value = this.taskList[index].description;
     document.getElementById('addButton').style.display = 'none';
     document.getElementById('approve').style.display = 'block';
-    document.getElementById('approve').addEventListener('click', (e) => {
+    document.getElementById('approve').addEventListener('click', () => {
       const tempDescription = document.getElementById('inputDescription').value;
       document.getElementById('inputDescription').value = '';
       this.taskList[index].description = tempDescription;
@@ -82,6 +84,6 @@ export default class Task {
       document.getElementById('addButton').style.display = 'block';
       document.getElementById('approve').style.display = 'none';
       location.reload();
-  });
+    });
   }
 }
