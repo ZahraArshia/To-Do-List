@@ -46,7 +46,7 @@ body {
   border: none;
   width: 100%;
   min-height: 40px;
-  animation-duration: 0.5s ;
+  animation-duration: 0.5s;
   animation-timing-function: step-end;
   animation-iteration-count: infinite;
   animation-direction: alternate;
