@@ -38,9 +38,19 @@ body {
   border-bottom: 0.5px solid rgb(129, 126, 126);
 }
 
+@keyframes mymove {
+  50% {background: rgb(135, 236, 157) bottom right/50px 50px;}
+}
+
 .input-box {
   border: none;
   width: 100%;
+  min-height: 40px;
+  /* animation-name: mymove ; */
+  animation-duration: .5s ;
+  animation-timing-function: step-end ;
+  animation-iteration-count: infinite ;
+  animation-direction: alternate ;
 }
 
 .button {
@@ -58,4 +68,8 @@ body {
   align-items: center;
   border-bottom: 0.5px solid rgb(129, 126, 126);
   padding: 2% 0%;
+}
+
+#approve {
+  display: none;
 }

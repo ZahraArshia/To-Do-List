@@ -3,9 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <title>to do list</title>
 <script defer src="main.js"></script></head>
 <body>
-    <h1>Hello webpack!</h1>
+  <main id="mainBox">
+    <div class="list-title">
+        <h2>To Do List</h2>
+        <img class="icon" src="https://img.icons8.com/material-outlined/24/000000/synchronize.png" alt="changeIcon"/>
+    </div>
+    <form class="form">
+      <div class="intery">
+        <input id="inputDescription" class="input-box" type="text" aria-label="add to list"  placeholder="Add to your list..." required>
+        <button id="addButton" type="button" class="button" aria-label="inter"><img src="https://img.icons8.com/material-rounded/24/000000/down-left.png" alt="interIcon"/></button>
+      </div>
+    </form>
+    <div id="placeholder"></div>
+    <button type="button" class="button" id="clear">Clear all completed</button>
+</main>
 </body>
 </html>
