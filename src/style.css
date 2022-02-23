@@ -53,12 +53,13 @@ body {
   animation-direction: alternate ;
 }
 
-.button {
+button {
   background-color: white;
   border: none;
   text-align: center;
   padding: 2% 0%;
   cursor: pointer;
+  min-width: 30px;
 }
 
 .items {
