@@ -39,18 +39,17 @@ body {
 }
 
 @keyframes mymove {
-  50% {background: rgb(135, 236, 157) bottom right/50px 50px;}
+  50% { background: rgb(135, 236, 157) bottom right/50px 50px; }
 }
 
 .input-box {
   border: none;
   width: 100%;
   min-height: 40px;
-  /* animation-name: mymove ; */
-  animation-duration: .5s ;
-  animation-timing-function: step-end ;
-  animation-iteration-count: infinite ;
-  animation-direction: alternate ;
+  animation-duration: 0.5s ;
+  animation-timing-function: step-end;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
 }
 
 button {
