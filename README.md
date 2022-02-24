@@ -1,8 +1,8 @@
 # To Do List
 "To-do list" is a tool that helps to organize daily activites. It simply lists the things which are needed to be done and allows user to mark them as complete.
-In this step of project, a simple HTML list of To Do tasks is builded. The list is styled according to the specifications. This simple web page is built using webpack and served by a webpack dev server.
+In this step of project, the CRUD (create, update, delete) methods are implemented. This simple web page is built using webpack and served by a webpack dev server.
  
- ![image](https://user-images.githubusercontent.com/78906545/155178401-6c90566a-6c96-44bb-9715-86f21f3c1fdc.png)
+![image](https://user-images.githubusercontent.com/78906545/155403049-861d20ef-8fd8-450f-894b-56464bf01937.png)
 
 ## Built With
 - HTML
