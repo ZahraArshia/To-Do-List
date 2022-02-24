@@ -23,4 +23,33 @@ function clear() {
   location.reload();
 }
 
-export { reset, clear };
+function setStatus() {
+  let checkList = [];
+  checkList = document.querySelectorAll('.check');
+  const taskList = JSON.parse(localStorage.getItem('taskList'));
+  checkList.forEach((element, index) => {
+    if (element.checked === true) {
+      taskList[index].completed = true;
+      localStorage.setItem('taskList', JSON.stringify(taskList));
+    } else if (element.checked === false) {
+      taskList[index].completed = false;
+      localStorage.setItem('taskList', JSON.stringify(taskList));
+    }
+  });
+}
+
+function getStatus() {
+  const taskList = JSON.parse(localStorage.getItem('taskList'));
+  const checkList = document.querySelectorAll('.check');
+  taskList.forEach((task, index) => {
+    if (task.completed === true) {
+      checkList[index].checked = true;
+    } else if (task.completed === false) {
+      checkList[index].checked = false;
+    }
+  });
+}
+
+export {
+  reset, setStatus, getStatus, clear,
+};

@@ -70,6 +70,10 @@ export default class Task {
   }
 
   edit(index) {
+    const btn = document.querySelectorAll('.editButton');
+    btn.forEach((element) => {
+      element.disabled = true;
+    });
     document.getElementById('inputDescription').style.animationName = 'mymove';
     document.getElementById('inputDescription').value = this.taskList[index].description;
     document.getElementById('addButton').style.display = 'none';
