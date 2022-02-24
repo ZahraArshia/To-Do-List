@@ -16,7 +16,7 @@ export default class Task {
   editMood = false;
 
   add() {
-    const temp = new Task(this.taskList.length, document.getElementById('inputDescription').value, false);
+    const temp = new Task((this.taskList.length) + 1, document.getElementById('inputDescription').value, false);
     this.taskList.push(temp);
     localStorage.setItem('taskList', JSON.stringify(this.taskList));
     this.taskList = JSON.parse(localStorage.getItem('taskList'));
@@ -63,7 +63,7 @@ export default class Task {
   remove(index) {
     this.taskList.splice(index, 1);
     this.taskList.forEach((task, id) => {
-      task.index = id;
+      task.index = id + 1;
     });
     localStorage.setItem('taskList', JSON.stringify(this.taskList));
     this.update();
