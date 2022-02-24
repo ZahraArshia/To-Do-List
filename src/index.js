@@ -1,5 +1,6 @@
 import './style.css';
-import Task from './CRUD.js';
+import Task from './modules/CRUD.js';
+import { reset, clear } from './modules/interaction.js';
 
 const newTask = new Task();
 newTask.update();
@@ -14,3 +15,6 @@ editbtn.forEach((btn, index) => {
     newTask.edit(index);
   });
 });
+
+document.getElementById('reset').addEventListener('click', reset);
+document.getElementById('clear').addEventListener('click', clear);

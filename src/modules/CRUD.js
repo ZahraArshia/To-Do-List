@@ -2,7 +2,6 @@
 import Icon from './icons8-drop-down-24.png';
 import removeIcon from './icons8-remove-24.png';
 import editIcon from './icons8-edit-24.png';
-import './style.css';
 
 export default class Task {
   constructor(index, description, completed) {
@@ -33,7 +32,7 @@ export default class Task {
         item.classList.add('items');
         item.setAttribute('id', index);
         item.innerHTML = `<div>
-                <input type="checkbox" id="check">
+                <input type="checkbox" class="check">
                 <label for="check">${task.description}</label>
                 </div>
                 `;
