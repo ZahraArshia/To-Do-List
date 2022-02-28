@@ -24,6 +24,8 @@ npm run build
 npm install --save-dev webpack-dev-server
 npm start   
 ```
+## Live Demo
+[Live Demo](https://zahraarshia.github.io/To-Do-List/)
 
 ## Author
 **Zahra**
