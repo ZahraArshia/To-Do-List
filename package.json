@@ -4,7 +4,7 @@
   "description": "",
   "private": true,
   "scripts": {
-    "deploy": "gh-pages -d dis",
+    "deploy": "npm run build && gh-pages -d dist",
     "dev": "webpack serve --open --mode=development",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
