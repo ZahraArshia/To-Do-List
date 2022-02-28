@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>to do list</title>
+<script defer src="main.js"></script></head>
+<body>
+<section id="mainBox" class="wrapper">
+  <div class="list-title">
+    <h2>To Do List</h2>
+    <button type="button" id="reset"><img class="icon" src="https://img.icons8.com/material-outlined/24/000000/synchronize.png" alt="changeIcon"/></button>
+  </div>
+  <form class="form" id="form">
+    <div class="intery">
+      <input id="inputDescription" class="input-box" type="text" aria-label="add to list"  placeholder="Add to your list..." required/>
+      <button id="addButton" type="button" class="button" aria-label="inter"><img src="https://img.icons8.com/material-rounded/24/000000/down-left.png" alt="interIcon"/></button>
+      <button id="approve" type="button" aria-label="aprrove"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAABeElEQVRIie3Uv0tVYRzH8dfVpECkcCgiwikcpEVyFsnCySEVbHFrkcDJv6CGGgPvIjjqKi25iDq1CRUNOmniYgUWlJI/ug3nezmHw7mXq16a/MLhPOd8Ps/785znfM/hsv5D3cR7fMKtZsO7sIFKHB9xo1nwHuwGeB2bMV7B1YvC+/AtgGu4jrvYiXtvcaUe4AFGa2hD+BWgRVzLaPexH1q5FvwxDsP0Mqc9xVFoc2jN6W1YCv1rEfwRDsLwN84vQnuO07j3GqXc3Ha8C/0nBurByxjDcVyvZkKnCxbWKWnVCvbQWw8+m1ndiHRLTvCsAH4bH8Kzje4Cj+/Sl5Z/9CeSNhwumHcPWzH3M+4UweFNmA4wWMuUq17JdlQk29NZz1zCzBlC+vEj/MvoaGRFjYYMS9/XgqQ1G66SpIOqIQ9z+oS0s8poOQu8KOR3JmRK+m28Og84HzKbCZmP8SkmLwrPhlSfpII/GG8WvFotkhb+IvlHXVbz6x/vVG10yieZ6wAAAABJRU5ErkJggg==" alt="aprroveIcon"/></button>
+    </div>
+  </form>
+  <div class="placeholder" id="placeholder"></div>
+  <button type="button" class="button" id="clear">Clear all completed</button>
+</section>
+</body>
+</html>
